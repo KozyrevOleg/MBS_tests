@@ -1,112 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ru.stqa.pft.sandbox.CreationAdminTests" tests="1" skipped="0" failures="1" errors="0" timestamp="2021-12-22T22:06:45" hostname="OLEGK-PC" time="6.447">
+<testsuite name="ru.stqa.pft.sandbox.CreationAdminTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-01-01T17:14:34" hostname="OLEGK-PC" time="23.164">
   <properties/>
-  <testcase name="test1login" classname="ru.stqa.pft.sandbox.CreationAdminTests" time="6.447">
-    <failure message="org.openqa.selenium.NoSuchElementException: Unable to locate element: #organization&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.1.0', revision: '87802e897b'&#10;System info: host: 'OLEGK-PC', ip: '192.168.3.178', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Command: [22e396bd-9b28-4462-bac8-e13d40dcdd09, findElement {using=id, value=organization}]&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 91.4.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20211215182543, moz:debuggerAddress: localhost:61389, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 12148, moz:profile: C:\Users\oleg.k\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:61389/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: 22e396bd-9b28-4462-bac8-e13d40dcdd09" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: Unable to locate element: #organization
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.1.0', revision: '87802e897b'
-System info: host: 'OLEGK-PC', ip: '192.168.3.178', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [22e396bd-9b28-4462-bac8-e13d40dcdd09, findElement {using=id, value=organization}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 91.4.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20211215182543, moz:debuggerAddress: localhost:61389, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 12148, moz:profile: C:\Users\oleg.k\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:61389/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 22e396bd-9b28-4462-bac8-e13d40dcdd09
-	at java.base@16.0.2/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base@16.0.2/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
-	at java.base@16.0.2/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base@16.0.2/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base@16.0.2/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at app//org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at app//org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at app//org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at app//org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at app//org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
-	at app//org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
-	at app//org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
-	at app//org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at app//org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at app//org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
-	at app//org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
-	at app//ru.stqa.pft.sandbox.appmanager.NavigationHelper.openAdministatorsPage(NavigationHelper.java:14)
-	at app//ru.stqa.pft.sandbox.CreationAdminTests.test1login(CreationAdminTests.java:9)
-	at java.base@16.0.2/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base@16.0.2/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-	at java.base@16.0.2/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base@16.0.2/java.lang.reflect.Method.invoke(Method.java:567)
-	at app//org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
-	at app//org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at app//org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
-	at app//org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at app//org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
-	at app//org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
-	at app//org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at app//org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
-	at app//org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
-	at app//org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
-	at app//org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
-	at app//org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at app//org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at app//org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at app//org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at app//org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at app//org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at app//org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at app//org.junit.runner.JUnitCore.run(JUnitCore.java:137)
-	at app//org.junit.runner.JUnitCore.run(JUnitCore.java:115)
-	at app//org.junit.vintage.engine.execution.RunnerExecutor.execute(RunnerExecutor.java:42)
-	at app//org.junit.vintage.engine.VintageTestEngine.executeAllChildren(VintageTestEngine.java:80)
-	at app//org.junit.vintage.engine.VintageTestEngine.execute(VintageTestEngine.java:72)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:108)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:96)
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:75)
-	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:99)
-	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:79)
-	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:75)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
-	at java.base@16.0.2/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base@16.0.2/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-	at java.base@16.0.2/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base@16.0.2/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
-	at jdk.proxy1/jdk.proxy1.$Proxy2.stop(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
-	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133)
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
-	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
-	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
-</failure>
-  </testcase>
+  <testcase name="CreateAdminDisabledAllPermissionsSelectedCompanies" classname="ru.stqa.pft.sandbox.CreationAdminTests" time="23.164"/>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
-SLF4J: Defaulting to no-operation (NOP) logger implementation
-SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-1640210806303	geckodriver	INFO	Listening on 127.0.0.1:61413
-1640210806589	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "61389" "-no-remote" "-profile" "C:\\Users\\oleg.k\\AppData\\Local\\Temp\\rust_mozprofilegianGG"
-1640210806927	Marionette	INFO	Marionette enabled
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\oleg.k\\AppData\\Local\\Temp\\rust_mozprofilegianGG\\search.json.mozlz4", (void 0)))
-DevTools listening on ws://localhost:61389/devtools/browser/0e8439cf-8dcf-41df-97f9-911b9b151f56
-1640210808842	Marionette	INFO	Listening on port 49246
-1640210809258	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
-Dec 23, 2021 1:06:49 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+  <system-err><![CDATA[SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/C:/Users/oleg.k/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-log4j12/1.7.32/1e225e45fd0c339284c7dcd87cc7a92665d6d559/slf4j-log4j12-1.7.32.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/C:/Users/oleg.k/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-jdk14/1.7.32/4d5bdc7da49cd69c25f7eed5ae0b259358c7edeb/slf4j-jdk14-1.7.32.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+log4j:WARN No appenders could be found for logger (io.netty.util.internal.logging.InternalLoggerFactory).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+1641057274664	geckodriver	INFO	Listening on 127.0.0.1:59714
+1641057274972	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "61311" "-no-remote" "-profile" "C:\\Users\\oleg.k\\AppData\\Local\\Temp\\rust_mozprofileR6fezw"
+1641057275352	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\oleg.k\\AppData\\Local\\Temp\\rust_mozprofileR6fezw\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:61311/devtools/browser/f416f092-35e5-4194-ba55-db1410ef6e41
+1641057277466	Marionette	INFO	Listening on port 63675
+1641057277664	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+Jan 01, 2022 8:14:37 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-1640210811367	Marionette	INFO	Stopped listening on port 49246
+1641057291410	geckodriver	INFO	Listening on 127.0.0.1:62139
+1641057291444	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "59146" "-no-remote" "-profile" "C:\\Users\\oleg.k\\AppData\\Local\\Temp\\rust_mozprofileN2Ok9S"
+1641057291782	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\oleg.k\\AppData\\Local\\Temp\\rust_mozprofileN2Ok9S\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:59146/devtools/browser/2346c103-2ab4-4263-b767-03090539e30d
+1641057293807	Marionette	INFO	Listening on port 63812
+1641057294119	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+Jan 01, 2022 8:14:54 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+1641057296421	Marionette	INFO	Stopped listening on port 63812
 JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
 !!! error running onStopped callback: TypeError: callback is not a function
-
-###!!! [Parent][MessageChannel] Error: (msgtype=0x390076,name=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
-
-JavaScript error: resource://gre/modules/Sqlite.jsm, line 1030: Error: Sqlite.jsm has been shutdown. Cannot open connection to: C:\Users\oleg.k\AppData\Local\Temp\rust_mozprofilegianGG\protections.sqlite
-1640210811860	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64"  data: no] Stack trace: stop()@TargetObserver.jsm:64
+1641057296922	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64"  data: no] Stack trace: stop()@TargetObserver.jsm:64
 unwatchForTabs()@TargetList.jsm:70
 unwatchForTargets()@TargetList.jsm:37
 destructor()@TargetList.jsm:109

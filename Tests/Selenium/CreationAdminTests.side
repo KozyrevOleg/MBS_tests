@@ -1,0 +1,426 @@
+{
+  "id": "003b88df-24bf-4c54-b8e7-507cf044133c",
+  "version": "2.0",
+  "name": "CreationAdminTests",
+  "url": "https://mspbackups.com/",
+  "tests": [{
+    "id": "cf66f7a9-deea-4570-88ce-0acc0c22d335",
+    "name": "Test 2 Create Admin",
+    "commands": [{
+      "id": "d289b8fa-4c04-43d3-8e15-63c6403c7039",
+      "comment": "",
+      "command": "open",
+      "target": "https://mspbackups.com/AP/Default.aspx",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e0d5cc87-30be-4408-9a3c-67fd7631a333",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1366x728",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "880d9be7-9dc2-4c01-9c15-65ac85c134c8",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "72e2b693-15e9-44c4-9d78-101374fea094",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3aa53fb2-6a2b-4fc9-9cdc-265a8ca98523",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": ""
+    }, {
+      "id": "c1a4f40b-5db6-4d64-bc40-512f791ef9a2",
+      "comment": "",
+      "command": "click",
+      "target": "id=organization",
+      "targets": [
+        ["id=organization", "id"],
+        ["css=#organization", "css:finder"],
+        ["xpath=//button[@id='organization']", "xpath:attributes"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[2]/button", "xpath:idRelative"],
+        ["xpath=//li[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Organization ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "68ff451f-712c-41dc-8dfb-eea9e335efde",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Administrators",
+      "targets": [
+        ["linkText=Administrators", "linkText"],
+        ["css=.show > .nav-item:nth-child(5) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Administrators')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/AP/Administrators')]", "xpath:href"],
+        ["xpath=//body/div[2]/ul/li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Administrators')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ed59fe8e-05e6-4c4e-9c06-8a5539b4cddb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.-isBlock > .btn",
+      "targets": [
+        ["css=.-isBlock > .btn", "css:finder"],
+        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//div[2]/div/div/mbs-button/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add Administrator')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "72664b9a-64d6-453f-b36b-f1056bb223e6",
+      "comment": "",
+      "command": "click",
+      "target": "id=firstName",
+      "targets": [
+        ["id=firstName", "id"],
+        ["css=#firstName", "css:finder"],
+        ["xpath=//input[@id='firstName']", "xpath:attributes"],
+        ["xpath=//mbs-sidepanel[@id='administrator_options']/aside/div/div/div/div/div/mbs-sidepanel-administrators-general-tab/div/mbs-input/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "605ed487-587f-4c33-8185-8a900c693034",
+      "comment": "",
+      "command": "type",
+      "target": "id=firstName",
+      "targets": [
+        ["id=firstName", "id"],
+        ["css=#firstName", "css:finder"],
+        ["xpath=//input[@id='firstName']", "xpath:attributes"],
+        ["xpath=//mbs-sidepanel[@id='administrator_options']/aside/div/div/div/div/div/mbs-sidepanel-administrators-general-tab/div/mbs-input/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Admin 1"
+    }, {
+      "id": "d1f13b92-8547-489d-bdae-868622d85886",
+      "comment": "",
+      "command": "click",
+      "target": "id=lastName",
+      "targets": [
+        ["id=lastName", "id"],
+        ["css=#lastName", "css:finder"],
+        ["xpath=//input[@id='lastName']", "xpath:attributes"],
+        ["xpath=//mbs-sidepanel[@id='administrator_options']/aside/div/div/div/div/div/mbs-sidepanel-administrators-general-tab/div[2]/mbs-input/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/mbs-input/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2a57c160-0f3a-4acf-b149-02b0431c1da3",
+      "comment": "",
+      "command": "type",
+      "target": "id=lastName",
+      "targets": [
+        ["id=lastName", "id"],
+        ["css=#lastName", "css:finder"],
+        ["xpath=//input[@id='lastName']", "xpath:attributes"],
+        ["xpath=//mbs-sidepanel[@id='administrator_options']/aside/div/div/div/div/div/mbs-sidepanel-administrators-general-tab/div[2]/mbs-input/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/mbs-input/div/div/div/input", "xpath:position"]
+      ],
+      "value": "Admin 1"
+    }, {
+      "id": "6629d918-94c0-47ef-b2c8-b1e61d640fee",
+      "comment": "",
+      "command": "click",
+      "target": "id=myMailField",
+      "targets": [
+        ["id=myMailField", "id"],
+        ["css=#myMailField", "css:finder"],
+        ["xpath=//input[@id='myMailField']", "xpath:attributes"],
+        ["xpath=//mbs-sidepanel[@id='administrator_options']/aside/div/div/div/div/div/mbs-sidepanel-administrators-general-tab/div[3]/mbs-input/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/mbs-input/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "197d16fe-ecb9-4e69-b3d5-c2d8ba57c822",
+      "comment": "",
+      "command": "type",
+      "target": "id=myMailField",
+      "targets": [
+        ["id=myMailField", "id"],
+        ["css=#myMailField", "css:finder"],
+        ["xpath=//input[@id='myMailField']", "xpath:attributes"],
+        ["xpath=//mbs-sidepanel[@id='administrator_options']/aside/div/div/div/div/div/mbs-sidepanel-administrators-general-tab/div[3]/mbs-input/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/mbs-input/div/div/div/input", "xpath:position"]
+      ],
+      "value": "admin1@msp360.com"
+    }, {
+      "id": "d4c301a1-7186-4e5a-a824-9cc6ad0649ce",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//mbs-sidepanel[@id='administrator_options']/aside/div/div/div/div/div/mbs-sidepanel-administrators-general-tab/div[4]/mbs-input/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/mbs-input/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3a68dcb4-4014-455e-990e-a185701a00c5",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//mbs-sidepanel[@id='administrator_options']/aside/div/div/div/div/div/mbs-sidepanel-administrators-general-tab/div[4]/mbs-input/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/mbs-input/div/div/div/input", "xpath:position"]
+      ],
+      "value": "123123123"
+    }, {
+      "id": "b23e485f-a251-4f76-9457-3fbc988e5442",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mbs-sidepanel_footer-col .btn-primary",
+      "targets": [
+        ["css=.mbs-sidepanel_footer-col .btn-primary", "css:finder"],
+        ["xpath=(//button[@type='button'])[23]", "xpath:attributes"],
+        ["xpath=//mbs-sidepanel[@id='administrator_options']/aside/div/footer/div/div/div/mbs-button/button", "xpath:idRelative"],
+        ["xpath=//footer/div/div/div/mbs-button/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Create')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9891325a-cbfb-4587-ac74-1dc99b13c75c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mbs-sidepanel_footer-col .btn-primary",
+      "targets": [
+        ["css=.mbs-sidepanel_footer-col .btn-primary", "css:finder"],
+        ["xpath=(//button[@type='button'])[28]", "xpath:attributes"],
+        ["xpath=//mbs-sidepanel[@id='administrator_options']/aside/div/footer/div/div[2]/div/mbs-button/button", "xpath:idRelative"],
+        ["xpath=//footer/div/div[2]/div/mbs-button/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Save')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "983a8878-c967-44ef-8afe-27f52616cbfc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mbs-table-grid_row:nth-child(6) .-isCtrl .col > span",
+      "targets": [
+        ["css=.mbs-table-grid_row:nth-child(6) .-isCtrl .col > span", "css:finder"],
+        ["xpath=//div[6]/div[2]/mbs-button/button/mbs-text-ellipsis/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "74548800-cbca-4df3-a6d0-5b2c2e8f7910",
+    "name": "Test 1 (log in)",
+    "commands": [{
+      "id": "b5e5f8ec-7eee-4c99-a95c-b4c74bd44a99",
+      "comment": "",
+      "command": "open",
+      "target": "https://mspbackups.com/Admin/Login.aspx?ref=%2FAdmin%2FDefault.aspx",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f0ff8f20-d890-4db6-b736-8973a4716cb1",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1366x728",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9bf36fef-044f-44e9-ade0-5c1c86e774fe",
+      "comment": "",
+      "command": "click",
+      "target": "id=txtLogin",
+      "targets": [
+        ["id=txtLogin", "id"],
+        ["name=txtLogin", "name"],
+        ["css=#txtLogin", "css:finder"],
+        ["xpath=//input[@id='txtLogin']", "xpath:attributes"],
+        ["xpath=//div[@id='pnlCredentials']/input", "xpath:idRelative"],
+        ["xpath=//div/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e39e49e9-7be9-419e-bbee-2ec27317917e",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtLogin",
+      "targets": [
+        ["id=txtLogin", "id"],
+        ["name=txtLogin", "name"],
+        ["css=#txtLogin", "css:finder"],
+        ["xpath=//input[@id='txtLogin']", "xpath:attributes"],
+        ["xpath=//div[@id='pnlCredentials']/input", "xpath:idRelative"],
+        ["xpath=//div/div[2]/input", "xpath:position"]
+      ],
+      "value": "oleg.k@msp360.com"
+    }, {
+      "id": "d0bcfe75-ba46-44c5-8dbe-cc18f38a27a4",
+      "comment": "",
+      "command": "click",
+      "target": "id=txtPassword",
+      "targets": [
+        ["id=txtPassword", "id"],
+        ["name=txtPassword", "name"],
+        ["css=#txtPassword", "css:finder"],
+        ["xpath=//input[@id='txtPassword']", "xpath:attributes"],
+        ["xpath=//div[@id='pnlCredentials']/input[2]", "xpath:idRelative"],
+        ["xpath=//div/div[2]/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7c08aa43-f44a-4607-abbd-d13638d9e752",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtPassword",
+      "targets": [
+        ["id=txtPassword", "id"],
+        ["name=txtPassword", "name"],
+        ["css=#txtPassword", "css:finder"],
+        ["xpath=//input[@id='txtPassword']", "xpath:attributes"],
+        ["xpath=//div[@id='pnlCredentials']/input[2]", "xpath:idRelative"],
+        ["xpath=//div/div[2]/input[2]", "xpath:position"]
+      ],
+      "value": "123"
+    }, {
+      "id": "d40d3be1-b74f-4c6a-ae1d-533538130fcf",
+      "comment": "",
+      "command": "click",
+      "target": "id=btnLogin",
+      "targets": [
+        ["id=btnLogin", "id"],
+        ["name=btnLogin", "name"],
+        ["css=#btnLogin", "css:finder"],
+        ["xpath=//input[@id='btnLogin']", "xpath:attributes"],
+        ["xpath=//div[@id='pnlHideForSecondStepGoogleAuth']/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "81a12b01-c925-40ac-aa2e-19c5bb765fb0",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "bdc91ca9-d4e2-4da8-906d-c6d2a26c3134",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "7b993882-183f-4490-8154-6e628e099bc0",
+    "name": "delete",
+    "commands": [{
+      "id": "c7265672-2596-4c6f-8491-d3c8bc6573bc",
+      "comment": "",
+      "command": "open",
+      "target": "https://mspbackups.com/AP/Default.aspx",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a363007f-5b40-4ed4-821f-3e6334712241",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "919x728",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0bd6493c-dc48-4ba4-841b-32af0d8069a3",
+      "comment": "",
+      "command": "click",
+      "target": "id=organization",
+      "targets": [
+        ["id=organization", "id"],
+        ["css=#organization", "css:finder"],
+        ["xpath=//button[@id='organization']", "xpath:attributes"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[2]/button", "xpath:idRelative"],
+        ["xpath=//li[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Organization ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a3c5b5af-e40b-4991-b088-7657fbc301be",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Administrators",
+      "targets": [
+        ["linkText=Administrators", "linkText"],
+        ["css=.show > .nav-item:nth-child(5) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Administrators')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/AP/Administrators')]", "xpath:href"],
+        ["xpath=//body/div[2]/ul/li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Administrators')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9c62dc36-ad7c-42d9-af2e-c15aa784a062",
+      "comment": "",
+      "command": "click",
+      "target": "css=.-isBlock > .btn",
+      "targets": [
+        ["css=.-isBlock > .btn", "css:finder"],
+        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//div[2]/div/div/mbs-button/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add Administrator')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c300b1c1-d1e2-4afe-b84a-2404c5b98b42",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.-isBlock > .btn",
+      "targets": [
+        ["css=.-isBlock > .btn", "css:finder"],
+        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//div[2]/div/div/mbs-button/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add Administrator')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "359a24c9-2783-441d-9237-c35ff6ac01f0",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.-isBlock > .btn",
+      "targets": [
+        ["css=.-isBlock > .btn", "css:finder"],
+        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//div[2]/div/div/mbs-button/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add Administrator')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "00341d1d-0958-4395-8bfe-971640d2e96d",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["cf66f7a9-deea-4570-88ce-0acc0c22d335"]
+  }],
+  "urls": ["https://mspbackups.com/"],
+  "plugins": []
+}
