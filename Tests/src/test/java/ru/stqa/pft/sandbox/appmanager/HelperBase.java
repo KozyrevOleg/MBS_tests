@@ -1,6 +1,7 @@
 package ru.stqa.pft.sandbox.appmanager;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 
 public class HelperBase {
@@ -18,4 +19,14 @@ public class HelperBase {
   public void click(By locator) {
     driver.findElement(locator).click();
   }
+
+  public boolean isElementPresent(By locator) {
+    try {
+      driver.findElement(locator);
+      return true;
+    } catch (NoSuchElementException ex) {
+      return false;
+    }
+  }
+
 }
