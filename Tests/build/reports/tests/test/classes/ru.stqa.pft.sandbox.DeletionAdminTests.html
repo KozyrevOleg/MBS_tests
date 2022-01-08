@@ -3,17 +3,17 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta http-equiv="x-ua-compatible" content="IE=edge"/>
-<title>Test results - ModificationAdminTests</title>
+<title>Test results - DeletionAdminTests</title>
 <link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
 <link href="../css/style.css" rel="stylesheet" type="text/css"/>
 <script src="../js/report.js" type="text/javascript"></script>
 </head>
 <body>
 <div id="content">
-<h1>ModificationAdminTests</h1>
+<h1>DeletionAdminTests</h1>
 <div class="breadcrumbs">
 <a href="../index.html">all</a> &gt; 
-<a href="../packages/ru.stqa.pft.sandbox.html">ru.stqa.pft.sandbox</a> &gt; ModificationAdminTests</div>
+<a href="../packages/ru.stqa.pft.sandbox.html">ru.stqa.pft.sandbox</a> &gt; DeletionAdminTests</div>
 <div id="summary">
 <table>
 <tr>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">17.239s</div>
+<div class="counter">11.427s</div>
 <p>duration</p>
 </div>
 </td>
@@ -78,8 +78,8 @@
 </tr>
 </thead>
 <tr>
-<td class="success">modificationAdminNoPermissionAllCompanies</td>
-<td class="success">17.239s</td>
+<td class="success">removeAdmin</td>
+<td class="success">11.427s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -95,22 +95,19 @@ SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
 log4j:WARN No appenders could be found for logger (io.netty.util.internal.logging.InternalLoggerFactory).
 log4j:WARN Please initialize the log4j system properly.
 log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
-1641669474778	geckodriver	INFO	Listening on 127.0.0.1:54978
-1641669475092	mozrunner::runner	INFO	Running command: &quot;C:\\Program Files\\Mozilla Firefox\\firefox.exe&quot; &quot;--marionette&quot; &quot;--remote-debugging-port&quot; &quot;51945&quot; &quot;-no-remote&quot; &quot;-profile&quot; &quot;C:\\Users\\oleg.k\\AppData\\Local\\Temp\\rust_mozprofileoIGoL5&quot;
-1641669475419	Marionette	INFO	Marionette enabled
-console.warn: SearchSettings: &quot;get: No settings file exists, new profile?&quot; (new NotFoundError(&quot;Could not open the file at C:\\Users\\oleg.k\\AppData\\Local\\Temp\\rust_mozprofileoIGoL5\\search.json.mozlz4&quot;, (void 0)))
-DevTools listening on ws://localhost:51945/devtools/browser/4886bdf6-f03b-4c1e-b712-37567479d9ec
-1641669477365	Marionette	INFO	Listening on port 56306
-1641669477758	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
-Jan 08, 2022 10:17:57 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+1641671509038	geckodriver	INFO	Listening on 127.0.0.1:54448
+1641671509351	mozrunner::runner	INFO	Running command: &quot;C:\\Program Files\\Mozilla Firefox\\firefox.exe&quot; &quot;--marionette&quot; &quot;--remote-debugging-port&quot; &quot;61999&quot; &quot;-no-remote&quot; &quot;-profile&quot; &quot;C:\\Users\\oleg.k\\AppData\\Local\\Temp\\rust_mozprofilepspUeZ&quot;
+1641671509702	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: &quot;get: No settings file exists, new profile?&quot; (new NotFoundError(&quot;Could not open the file at C:\\Users\\oleg.k\\AppData\\Local\\Temp\\rust_mozprofilepspUeZ\\search.json.mozlz4&quot;, (void 0)))
+DevTools listening on ws://localhost:61999/devtools/browser/eab054c1-16f7-49b6-a724-c5b7f86abc19
+1641671511663	Marionette	INFO	Listening on port 58396
+1641671512040	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+Jan 08, 2022 10:51:52 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-1641669490761	Marionette	INFO	Stopped listening on port 56306
+1641671519155	Marionette	INFO	Stopped listening on port 58396
 JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
 !!! error running onStopped callback: TypeError: callback is not a function
-
-###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
-
-1641669491208	RemoteAgent	ERROR	unable to stop listener: [Exception... &quot;Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]&quot;  nsresult: &quot;0x8000ffff (NS_ERROR_UNEXPECTED)&quot;  location: &quot;JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64&quot;  data: no] Stack trace: stop()@TargetObserver.jsm:64
+1641671519670	RemoteAgent	ERROR	unable to stop listener: [Exception... &quot;Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]&quot;  nsresult: &quot;0x8000ffff (NS_ERROR_UNEXPECTED)&quot;  location: &quot;JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64&quot;  data: no] Stack trace: stop()@TargetObserver.jsm:64
 unwatchForTabs()@TargetList.jsm:70
 unwatchForTargets()@TargetList.jsm:37
 destructor()@TargetList.jsm:109
@@ -127,7 +124,7 @@ close()@RemoteAgent.jsm:138
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.2</a> at Jan 8, 2022, 10:18:12 PM</p>
+<a href="http://www.gradle.org">Gradle 7.2</a> at Jan 8, 2022, 10:52:00 PM</p>
 </div>
 </div>
 </body>

@@ -32,7 +32,7 @@ public class AdministratorHelper extends HelperBase {
   }
 
   public void openExistingAdministrator() {
-    click(By.xpath("/html/body/div[1]/app-root/app-app-layout/main/div/div/app-administrators/div/div/mbs-table-grid/mbs-table/div/div/div[2]/div[6]/div[2]/mbs-button/button/mbs-text-ellipsis/span/span"));
+    click(By.xpath("/html/body/div[1]/app-root/app-app-layout/main/div/div/app-administrators/div/div/mbs-table-grid/mbs-table/div/div/div[2]/div[2]/div[2]/mbs-button/button/mbs-text-ellipsis/span/span"));
   }
 
 
@@ -76,11 +76,23 @@ public class AdministratorHelper extends HelperBase {
   }
 
   public boolean isAdministratorExist() {
-    return isElementPresent(By.xpath("/html/body/div[1]/app-root/app-sidepanel-administrators/mbs-sidepanel/aside/div/div/div/div[1]/div/mbs-sidepanel-administrators-general-tab/div[3]/mbs-input/div/mbs-input-errors/div/div"));
+    return isElementPresent(By.xpath("/html/body/div[1]/app-root/app-app-layout/main/div/div/app-administrators/div/div/mbs-table-grid/mbs-table/div/div/div[2]/div[2]/div[2]/mbs-button/button/mbs-text-ellipsis/span/span"));
   }
 
   public boolean isCompanyWasAdded() {
     return isElementPresent(By.xpath("/html/body/div[1]/app-root/app-sidepanel-administrators/mbs-sidepanel/aside/div/div/div/div[3]/div/mbs-sidepanel-administrators-companies-tab/div/div[3]/table/tbody/tr/td[2]"));
+  }
+
+  public void removeAdmin() {
+    click(By.xpath("/html/body/div[1]/app-root/app-sidepanel-administrators/mbs-sidepanel/aside/div/footer/div/div[1]/mbs-button/button"));
+  }
+
+  public void confirmDeletionDelete() {
+    click(By.xpath("/html/body/ngb-modal-window/div/div/app-modal/div[2]/mbs-button[1]/button"));
+  }
+
+  public void cancelRemoveAdmin() {
+    click(By.xpath("/html/body/ngb-modal-window/div/div/app-modal/div[2]/mbs-button[2]/button"));
   }
 // What the locator should be written?
   /*public boolean isThereNameAndSecondNameExist() {

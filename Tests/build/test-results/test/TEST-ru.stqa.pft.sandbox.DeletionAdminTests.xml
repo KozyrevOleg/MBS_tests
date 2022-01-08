@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ru.stqa.pft.sandbox.DeletionAdminTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-01-08T19:51:48" hostname="OLEGK-PC" time="11.427">
+  <properties/>
+  <testcase name="removeAdmin" classname="ru.stqa.pft.sandbox.DeletionAdminTests" time="11.427"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/C:/Users/oleg.k/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-log4j12/1.7.32/1e225e45fd0c339284c7dcd87cc7a92665d6d559/slf4j-log4j12-1.7.32.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/C:/Users/oleg.k/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-jdk14/1.7.32/4d5bdc7da49cd69c25f7eed5ae0b259358c7edeb/slf4j-jdk14-1.7.32.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+log4j:WARN No appenders could be found for logger (io.netty.util.internal.logging.InternalLoggerFactory).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+1641671509038	geckodriver	INFO	Listening on 127.0.0.1:54448
+1641671509351	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "61999" "-no-remote" "-profile" "C:\\Users\\oleg.k\\AppData\\Local\\Temp\\rust_mozprofilepspUeZ"
+1641671509702	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\oleg.k\\AppData\\Local\\Temp\\rust_mozprofilepspUeZ\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:61999/devtools/browser/eab054c1-16f7-49b6-a724-c5b7f86abc19
+1641671511663	Marionette	INFO	Listening on port 58396
+1641671512040	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+Jan 08, 2022 10:51:52 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+1641671519155	Marionette	INFO	Stopped listening on port 58396
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+!!! error running onStopped callback: TypeError: callback is not a function
+1641671519670	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64"  data: no] Stack trace: stop()@TargetObserver.jsm:64
+unwatchForTabs()@TargetList.jsm:70
+unwatchForTargets()@TargetList.jsm:37
+destructor()@TargetList.jsm:109
+stop()@CDP.jsm:104
+close()@RemoteAgent.jsm:138
+]]></system-err>
+</testsuite>
