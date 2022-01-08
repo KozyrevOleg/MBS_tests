@@ -21,7 +21,7 @@ public class AdministratorHelper extends HelperBase {
     type("password", administratorsData.password());
   }
 
-  public void changeAdministratorForm (AdministratorsData administratorsData) {
+  public void changeAdministratorForm(AdministratorsData administratorsData) {
     type("firstName", administratorsData.firstName());
     type("lastName", administratorsData.lastName());
   }
@@ -48,7 +48,7 @@ public class AdministratorHelper extends HelperBase {
     //driver.findElement(By.cssSelector("mbs-radio.ng-valid:nth-child(2) > div:nth-child(1) > label:nth-child(2)")).click();
     driver.findElement(By.cssSelector(".mbs-tabset_item:nth-child(3) > .mbs-tabset_link")).click();
     driver.findElement(By.cssSelector(".ng-untouched:nth-child(2) .mbs-radio_label")).click();
-    if (! isCompanyWasAdded()) {
+    if (!isCompanyWasAdded()) {
       dropDownList();
     }
    /* if (! isCompanyWasAdded()) {
@@ -94,6 +94,11 @@ public class AdministratorHelper extends HelperBase {
   public void cancelRemoveAdmin() {
     click(By.xpath("/html/body/ngb-modal-window/div/div/app-modal/div[2]/mbs-button[2]/button"));
   }
+
+  public boolean isEmailExist() {
+    return isElementPresent(By.xpath("/html/body/div[1]/app-root/app-sidepanel-administrators/mbs-sidepanel/aside/div/div/div/div[1]/div/mbs-sidepanel-administrators-general-tab/div[3]/mbs-input/div/mbs-input-errors/div/div"));
+  }
+
 // What the locator should be written?
   /*public boolean isThereNameAndSecondNameExist() {
     return isElementPresent(By.id("value"));

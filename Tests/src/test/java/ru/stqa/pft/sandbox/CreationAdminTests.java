@@ -10,7 +10,7 @@ public class CreationAdminTests extends TestBase {
     app.getNavigationHelper().openAdministratorsPage();
     app.getAdministratorHelper().fillAdministratorForm(new AdministratorsData("Admin 1", "Admin 1",
             "admin1@msp360.com", "123123123"));
-    if (app.getAdministratorHelper().isAdministratorExist()) {
+    if (app.getAdministratorHelper().isEmailExist()) {
       app.getAdministratorHelper().closeSidePanel();
       app.getAdministratorHelper().closeChangeDetector();
     } else {
@@ -24,7 +24,7 @@ public class CreationAdminTests extends TestBase {
     app.getNavigationHelper().openAdministratorsPage();
     app.getAdministratorHelper().fillAdministratorForm(new AdministratorsData("Admin 2", "Admin 2",
             "admin2@msp360.com", "123123123"));
-    if (app.getAdministratorHelper().isAdministratorExist()) {
+    if (app.getAdministratorHelper().isEmailExist()) {
       app.getAdministratorHelper().closeSidePanel();
       app.getAdministratorHelper().closeChangeDetector();
     } else {
@@ -40,7 +40,7 @@ public class CreationAdminTests extends TestBase {
     app.getNavigationHelper().openAdministratorsPage();
     app.getAdministratorHelper().fillAdministratorForm(new AdministratorsData("Admin 3",
             "Admin 3", "admin3@msp360.com", "123123123"));
-    if (app.getAdministratorHelper().isAdministratorExist()) {
+    if (app.getAdministratorHelper().isEmailExist()) {
       app.getAdministratorHelper().closeSidePanel();
       app.getAdministratorHelper().closeSidePanel();
     } else {
@@ -58,7 +58,7 @@ public class CreationAdminTests extends TestBase {
   public void createAdminWithoutNameAndSecondName() {
     app.getNavigationHelper().openAdministratorsPage();
     app.getAdministratorHelper().fillAdministratorForm(new AdministratorsData(null, null, "admin4@msp360.com", "123123123"));
-    if (app.getAdministratorHelper().isAdministratorExist()) {
+    if (app.getAdministratorHelper().isEmailExist()) {
       app.getAdministratorHelper().closeSidePanel();
       app.getAdministratorHelper().closeSidePanel();
     } else {
