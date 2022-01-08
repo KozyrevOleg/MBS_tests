@@ -3,10 +3,10 @@ package ru.stqa.pft.sandbox.appmanager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.Select;
-import org.testng.Assert;
 import ru.stqa.pft.sandbox.model.AdministratorsData;
 
 public class AdministratorHelper extends HelperBase {
+
 
   public AdministratorHelper(WebDriver driver) {
     super(driver);
@@ -21,14 +21,20 @@ public class AdministratorHelper extends HelperBase {
     type("password", administratorsData.password());
   }
 
+  public void changeAdministratorForm (AdministratorsData administratorsData) {
+    type("firstName", administratorsData.firstName());
+    type("lastName", administratorsData.lastName());
+  }
+
 
   public void clickCreateOrSave() {
-    click(By.cssSelector("div.mbs-sidepanel_footer-col:nth-child(1) > mbs-button:nth-child(1) > button:nth-child(1)"));
+    click(By.xpath("/html/body/div[1]/app-root/app-sidepanel-administrators/mbs-sidepanel/aside/div/footer/div/div/div[1]/mbs-button/button"));
   }
 
-  public void openExistedAdministrator() {
-    click(By.cssSelector(".mbs-sidepanel_footer-col .btn-primary"));
+  public void openExistingAdministrator() {
+    click(By.xpath("/html/body/div[1]/app-root/app-app-layout/main/div/div/app-administrators/div/div/mbs-table-grid/mbs-table/div/div/div[2]/div[6]/div[2]/mbs-button/button/mbs-text-ellipsis/span/span"));
   }
+
 
   public void enableAdministrator() {
     click(By.cssSelector(".mbs-form-group > .ng-untouched:nth-child(1) .mbs-check_label"));
@@ -40,15 +46,21 @@ public class AdministratorHelper extends HelperBase {
 
   public void SelectSpecificCompanies() {
     //driver.findElement(By.cssSelector("mbs-radio.ng-valid:nth-child(2) > div:nth-child(1) > label:nth-child(2)")).click();
-    click(By.cssSelector(".ng-untouched:nth-child(2) .mbs-radio_label"));
-    dropDownList();
+    driver.findElement(By.cssSelector(".mbs-tabset_item:nth-child(3) > .mbs-tabset_link")).click();
+    driver.findElement(By.cssSelector(".ng-untouched:nth-child(2) .mbs-radio_label")).click();
+    if (! isCompanyWasAdded()) {
+      dropDownList();
+    }
+   /* if (! isCompanyWasAdded()) {
+      clickCreateOrSave();
+    }*/
+    // new Select(driver.findElement(By.name("new_group"))).selectByVisibleText(contactData1.group());
   }
 
   private void dropDownList() {
-    click(By.cssSelector(".ng-input"));
-    click(By.xpath("/html/body/div[1]/app-root/app-sidepanel-administrators/mbs-sidepanel/aside/div/div/div/div[3]/div/mbs-sidepanel-administrators-companies-tab/div/div[2]/div[1]/div[1]/mbs-select/div/ng-select/ng-dropdown-panel/div/div[2]/div[3]/span"));
-    click(By.cssSelector(".col-3 .btn"));
-    click(By.cssSelector(".mbs-sidepanel_footer-col .btn-primary"));
+    driver.findElement(By.cssSelector(".ng-input")).click();
+    driver.findElement(By.xpath("/html/body/div[1]/app-root/app-sidepanel-administrators/mbs-sidepanel/aside/div/div/div/div[3]/div/mbs-sidepanel-administrators-companies-tab/div/div[2]/div[1]/div[1]/mbs-select/div/ng-select/ng-dropdown-panel/div/div[2]/div[3]/span")).click();
+    driver.findElement(By.cssSelector(".col-3 .btn")).click();
   }
 
   public void closeSidePanel() {
@@ -59,7 +71,19 @@ public class AdministratorHelper extends HelperBase {
     click(By.xpath("/html/body/ngb-modal-window/div/div/app-modal/div[2]/mbs-button[2]/button"));
   }
 
+  public void removeAddedCompany() {
+    click(By.xpath("/html/body/div[1]/app-root/app-sidepanel-administrators/mbs-sidepanel/aside/div/div/div/div[3]/div/mbs-sidepanel-administrators-companies-tab/div/div[3]/table/tbody/tr/td[3]/mbs-button/button/span"));
+  }
+
   public boolean isAdministratorExist() {
     return isElementPresent(By.xpath("/html/body/div[1]/app-root/app-sidepanel-administrators/mbs-sidepanel/aside/div/div/div/div[1]/div/mbs-sidepanel-administrators-general-tab/div[3]/mbs-input/div/mbs-input-errors/div/div"));
   }
+
+  public boolean isCompanyWasAdded() {
+    return isElementPresent(By.xpath("/html/body/div[1]/app-root/app-sidepanel-administrators/mbs-sidepanel/aside/div/div/div/div[3]/div/mbs-sidepanel-administrators-companies-tab/div/div[3]/table/tbody/tr/td[2]"));
+  }
+// What the locator should be written?
+  /*public boolean isThereNameAndSecondNameExist() {
+    return isElementPresent(By.id("value"));
+  }*/
 }

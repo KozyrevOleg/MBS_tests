@@ -20,7 +20,7 @@ public class ApplicationManager {
     System.setProperty("webdriver.gecko.driver", "C:\\Java test\\Selenium\\geckodriver.exe");
     System.setProperty("webdriver.chrome.driver", "C:\\Java test\\Selenium\\chromedriver.exe");
     driver = new FirefoxDriver();
-    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(4));
+    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
     driver.get("https://mspbackups.com/AP/Administrators");
     driver.manage().window().setSize(new Dimension(1368, 768));
     driver.findElement(By.id("txtLogin")).click();

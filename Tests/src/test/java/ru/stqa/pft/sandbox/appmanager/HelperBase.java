@@ -13,7 +13,12 @@ public class HelperBase {
 
   public void type(String locator, String text) {
     click(By.id(locator));
-    driver.findElement(By.id(locator)).sendKeys(text);
+    if (text != null) {
+      String existingText = driver.findElement(By.id(locator)).getAttribute("value");
+      if (! text.equals(existingText)) {
+        driver.findElement(By.id(locator)).sendKeys(text);
+      }
+    }
   }
 
   public void click(By locator) {

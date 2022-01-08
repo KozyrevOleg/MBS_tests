@@ -12,7 +12,7 @@ public class NavigationHelper extends HelperBase {
     super(driver);
   }
 
-  public void openAdministatorsPage() {
+  public void openAdministratorsPage() {
     driver.switchTo().defaultContent();
     driver.findElement(By.id("organization")).click();
     driver.findElement(By.linkText("Administrators")).click();
